@@ -27,8 +27,13 @@
         },
         {
             "label": "2025-09-17_14-51-18",
-            "content": "class Towel:\n    def __init__(self,color:str, size: str): # construtor\n        self.color: str = color #atributo\n        self.size: str = \"\"\n        self.wetnees: int = 0\n\nprint('Qual a cor da sua toalha?')\ncolor = input()\ntowel: Towel = Towel(color, \"P\")\n\n\nprint(f\"Sua toalha \u00e9 {towel.color}\")\n",
+            "content": "@@ -131,20 +131,18 @@\n : str = \n-size\n+%22%22\n %0A       \n@@ -220,62 +220,8 @@\n t()%0A\n-print('Qual o tamanho da sua toalha?')%0Asize = input()%0A\n towe\n@@ -244,20 +244,19 @@\n (color, \n-size\n+%22P%22\n )%0A%0A%0Aprin\n@@ -289,33 +289,7 @@\n lor%7D\n- e do tamanho %7Btowel.size%7D\n %22)%0A\n",
             "lines": "12"
+        },
+        {
+            "label": "2025-09-18_22-08-46",
+            "content": "class Towel:\n    def __init__(self,color:str, size: str): # construtor\n        self.color: str = color #atributo\n        self.size: str = size\n        self.wetnees: int = 0\n\nprint('Qual a cor da sua toalha?')\ncolor = input()\nprint('Qual o tamanho da sua toalha?')\nsize = input()\ntowel: Towel = Towel(color, size)\n\n\nprint(f\"Sua toalha \u00e9 {towel.color} e do tamanho {towel.size}\")\n",
+            "lines": "14"
         }
     ]
 }
