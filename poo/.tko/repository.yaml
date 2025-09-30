@@ -6,8 +6,8 @@ filter:
 version: 0.0.1
 database: database
 expanded:
-- campanha-principal
 - configuracao-e-aquecimento
+- campanha-principal
 - bloco_b-primeiras-classes
 tasks: {}
 flags:
@@ -16,4 +16,4 @@ flags:
   tasks: 0
   graph: 0
   xray: 0
-index: toalha
+index: animal

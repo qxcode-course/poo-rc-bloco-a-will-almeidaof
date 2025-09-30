@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-30_14-30-02",
+            "content": "@@ -1063,79 +1063,8 @@\n al)%0A\n-        elif args%5B0%5D == %22grow%22:%0A            animal.ageBy(int(args%5B1%5D))%0A\n     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-30_14-36-28",
+            "content": "@@ -455,16 +455,25 @@\n eturn f%22\n+Species: \n %7Bself.sp\n@@ -478,17 +478,23 @@\n species%7D\n-:\n+, Age: \n %7Bself.ag\n@@ -495,17 +495,25 @@\n elf.age%7D\n-:\n+, Sound: \n %7Bself.so\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-30_14-37-35",
+            "content": "@@ -340,33 +340,8 @@\n .%22)%0A\n-            self.age = 4%0A\n     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-30_14-40-22",
+            "content": "@@ -332,16 +332,17 @@\n %7D morreu\n+.\n %22)%0A     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-09-30_14-40-36",
+            "content": "@@ -398,128 +398,8 @@\n f):%0A\n-        if self.age == 0:%0A            print(%22---%22)%0A        if self.age == 4:%0A            print(%22RIP%22)%0A        else:%0A    \n     \n@@ -421,17 +421,16 @@\n sound)%0A%0A\n-%0A\n     def \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-09-30_14-45-37",
+            "content": "@@ -1256,70 +1256,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22noise%22:%0A            animal.makeSound%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-09-30_14-46-34",
+            "content": "@@ -453,18 +453,16 @@\n         \n-el\n if self.\n@@ -1313,18 +1313,16 @@\n akeSound\n-()\n %0A       \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-09-30_14-51-58",
+            "content": "class Animal:\n    def __init__(self, species: str, sound: str): # construtor\n        self.species: str = species # atributos\n        self.age: int = 0\n        self.sound: str = sound\n    \n    def ageBy(self, increment: int) -> None:\n        self.age += increment\n        if self.age >= 4:\n            print(f\"warning: {self.species} morreu\")\n            self.age = 4\n        \n    def makeSound(self):\n        if self.age == 0:\n            print(\"---\")\n        elif self.age == 4:\n            print(\"RIP\")\n        else:\n            print(self.sound)\n\n\n    def __str__(self) -> str: # toString\n        return f\"{self.species}:{self.age}:{self.sound}\"\n\n\ndef main(): \n    animal: Animal = Animal(\"\",\"\") # 2: criar um obj com qq valor inicial\n    while True: # 3: loop infinito\n\n        line: str = input() # 4: perguntar ao usuario\n        print(\"$\" + line) # echo\n        args: list[str] = line.split(\" \") # 5: separar argumentos\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\": # color size\n            species: str = args[1]\n            sound: str = args[2]\n            animal = Animal(species, sound)\n        elif args[0] == \"show\":\n            print(animal)\n        elif args[0] == \"grow\":\n            animal.ageBy(int(args[1]))\n        elif args[0] == \"noise\":\n            animal.makeSound()\n        else: # 7: erro\n            print(\"fail: comando n\u00e3o encontrado\")\n\nmain() # passo 1",
+            "lines": "49"
+        }
+    ]
+}
