@@ -1,0 +1,8 @@
+2025-10-01 23:35:13, MOVE, v:1, k:animal, mode:PICK
+2025-10-01 23:35:15, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-10-01 23:35:42, EXEC, v:1, k:animal, mode:FREE
+2025-10-01 23:36:38, MOVE, v:1, k:animal, mode:BACK
+2025-10-01 23:36:38, MOVE, v:1, k:animal, mode:PICK
+2025-10-01 23:36:40, MOVE, v:1, k:animal, mode:BACK
+2025-10-01 23:36:40, MOVE, v:1, k:animal, mode:PICK
+2025-10-01 23:37:20, MOVE, v:1, k:carro, mode:DOWN
