@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-02_19-22-55",
+            "content": "@@ -1,450 +0,0 @@\n-class Calculadora:%0A    def __init__(self):%0A        self.display: float = 0%0A        self.battery: int = 0%0A        self.batteryMax: int = 100%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.display%7D:%7Bself.battery%7D:%7Bself.batteryMax%7D%22%0A%0Adef main():%0A    calculadora: Calculadora = Calculadora()%0A    while True:%0A        line: str = input()%0A        print(%22$%22+line)%0A        args:list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-02_19-42-36",
+            "content": "class Calculadora:\n    def __init__(self):\n        self.display: float = 0\n        self.battery: int = 0\n        self.batteryMax: int = 100\n\n    def __str__(self) -> str:\n        return f\"{self.display}:{self.battery}:{self.batteryMax}\"\n\ndef main():\n    calculadora: Calculadora = Calculadora()\n    while True:\n        line: str = input()\n        print(\"$\"+line)\n        args:list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break",
+            "lines": "17"
+        }
+    ]
+}
