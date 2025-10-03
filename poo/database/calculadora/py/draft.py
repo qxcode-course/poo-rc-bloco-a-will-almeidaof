@@ -10,12 +10,12 @@
 # Contruindo classe Calculator
 
 class Calculator:
-  def _init_(self, maxBattery: int):
+  def __init__(self, maxBattery: int):
     self.battery:    int   = 0;
     self.maxBattery: int   = maxBattery;
     self.display:    float = 0.00;
 
-  def _str_(self) -> str:
+  def __str__(self) -> str:
     return f"display = {self.display:.2f}, battery = {self.battery}";
 
   def charge (self, value: int):
@@ -46,7 +46,7 @@ class Calculator:
 # Contrindo função main()
 
 def main():
-  calculator: Calculator = Calculator();
+  calculator: Calculator = Calculator(0);
 
   while True:
     line: str = input();
